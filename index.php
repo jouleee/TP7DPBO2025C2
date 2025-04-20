@@ -17,7 +17,7 @@ if (isset($_POST['booking'])) {
 <head>
     <meta charset="UTF-8">
     <title>Court Booking</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <?php include 'view/header.php'; ?>
