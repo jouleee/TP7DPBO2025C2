@@ -32,7 +32,7 @@ class Pengguna {
     }
 
     public function updateUser($id, $name, $email, $phone) {
-        $stmt = $this->db->prepare("UPDATE t_pengguna SET nama = ?, email = ?, telepon = ? WHERE id_pengguna = ?");
+        $stmt = $this->db->prepare("UPDATE t_pengguna SET nama = ?, email = ?, nomor_hp = ? WHERE id_pengguna = ?");
         $stmt->execute([$name, $email, $phone, $id]);
         return $stmt->rowCount();
     }
